@@ -1,0 +1,38 @@
+.box{
+    width: 100%;
+    border: 1px solid #ccc;
+    background: #fff;
+    margin-bottom: 20px;
+    font-size: 12px;
+    box-shadow: 0px 0px 2px 2px #ccc;
+    a{
+        text-decoration: none;
+        color: black;
+    .top{
+        width: 100%;
+        img{
+            width: 100%;
+        }
+    }
+    .bottom{
+        height: 50px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        .left{
+            display: flex;
+            flex-direction: column;
+            span:nth-child(2){
+                color: #9a9a9a;
+                margin-top: 4px;
+            }
+        }
+        .right{
+            font-size: 20px;
+            color: #ef6a3a;
+        }
+    }
+    
+}
+}

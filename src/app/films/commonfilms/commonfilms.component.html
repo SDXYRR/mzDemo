@@ -1,0 +1,43 @@
+<div id="total">
+  <a href="javascript:void(0)" routerLink="/commonfilm/{{item.id}}">
+    <div class="left">
+        <img [src]="item.poster.origin" alt="">
+    </div>
+    <div class="right">
+        <div class="top">
+            <h4>
+                {{item.name}}
+            </h4>
+            <span>
+              <em *ngIf="type=='now_playing'">
+                  {{item.grade}}
+              </em>
+              <i>
+                  &gt;
+              </i>
+      </span>
+        </div>
+        <h6>
+            {{item.intro}}
+        </h6>
+        <div class="bottom">
+            <span *ngIf="type=='now_playing'">
+              <em>
+                  {{item.cinemaCount}}
+              </em>家影院上映
+              </span>
+              <span *ngIf="type=='comming_soon'" class="other">
+                {{item.premiereAt|date:'MM月dd日'}}上映
+              </span>
+            <span *ngIf="type=='now_playing'">
+              <em>
+                  {{item.watchCount}}
+              </em>人购票
+             </span>
+             <span *ngIf="type=='comming_soon'" class="other2">
+                {{item.premiereAt|getDays}}
+             </span>
+        </div>
+    </div>
+    </a>
+  </div>

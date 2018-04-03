@@ -1,0 +1,28 @@
+.box {
+    width: 100%;
+    border: 1px solid #ccc;
+    background: #fff;
+    margin-bottom: 20px;
+    font-size: 12px;
+    box-shadow: 0px 0px 2px 2px #ccc;
+    a{
+        text-decoration: none;
+        color: #3a3838;
+    .top {
+        width: 100%;
+        img {
+            width: 100%;
+        }
+    }
+    .bottom {
+        height: 35px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        .right {
+            color: #e89273;
+        }
+    }
+    }
+}

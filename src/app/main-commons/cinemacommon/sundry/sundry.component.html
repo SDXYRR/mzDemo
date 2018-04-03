@@ -1,0 +1,16 @@
+<div *ngIf="foodData" class="foodlist">
+    <h2>
+        {{foodData.name}}
+    </h2>
+    <p>
+        {{foodData.address}}
+    </p>
+    <div class="selectO">
+        <div class="need" (click)="backTo()">
+            不需要
+        </div>
+        <div class="notneed" (click)="buyTo()">
+            购买
+        </div>
+    </div>
+</div>

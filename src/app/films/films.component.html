@@ -1,0 +1,11 @@
+<div id="filmsList">
+    <ul>
+        <li routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" >
+            <a href="javascript:void(0)" routerLink="nowplay">正在热映</a>
+        </li>
+        <li routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" >
+            <a href="javascript:void(0)" routerLink="comming">即将上映</a>
+        </li>
+    </ul>
+    <router-outlet></router-outlet>
+</div>

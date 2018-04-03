@@ -1,0 +1,37 @@
+#commig {
+    width: 100%;
+    padding: 5%;
+    margin-top: 24px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid #8a8a8a;
+    position: relative;
+    .wiPlay {
+        position: absolute;
+        top: -10px;
+        background: #a7a7a7;
+        color: #eee;
+        margin-left: 32%;
+        width: 80px;
+        text-align: center;
+        border-radius: 4px;
+        height: 18px;
+    }
+    .comiSon {
+        margin-top: 35px;
+    }
+    .button {
+        width: 55%;
+        height: 30px;
+        border: 1px solid gray;
+        border-radius: 20px;
+        text-align: center;
+        margin: 0 auto;
+        line-height: 30px;
+        a{
+            text-decoration: none;
+            color: rgb(88, 85, 85);
+        }
+    }
+}

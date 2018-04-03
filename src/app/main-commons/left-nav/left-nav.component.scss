@@ -1,0 +1,37 @@
+    ul{
+        position: fixed;
+        background: #282828;
+        top: 50px;
+        right: 100%;
+        bottom: 0;
+        z-index: 2;
+        left: -70%;
+        border-top: 2px solid #313131;
+        li{
+            width: 100%;
+            border-bottom: 1px solid #313131;
+            a{
+                display: flex;
+                text-decoration: none;
+                padding: 18px 20px;
+                flex-direction: row;
+                justify-content: space-between;
+                color: #888888;
+                span{
+                    &:nth-child(2){
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+#mask{
+    position: absolute;
+    top: 50px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: gray;
+    z-index: 2;
+    position: fixed;
+}

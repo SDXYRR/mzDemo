@@ -1,0 +1,18 @@
+<div id="header">
+    <ul>
+      <li (click)="changNavBar()">
+        <span class="fa fa-navicon"></span>
+      </li>
+      <li>卖座电影</li>
+      <li>
+        <span routerLink="city">深圳</span>
+        <span class="fa fa-angle-down"></span>
+      </li>
+      <li (click)="toHome()">
+          <span class="fa fa-user-o"></span>
+          <i [@rotateC]="rotateC">
+            <img src="../../../assets/2.gif" alt="">
+          </i>
+      </li>
+    </ul>
+</div>

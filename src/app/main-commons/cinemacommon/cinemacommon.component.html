@@ -1,0 +1,91 @@
+<div class="cinema" *ngIf="cinimaData">
+    <div class="top">
+        <img src="http://static.m.maizuo.com/v4/static/app/asset/66461d1a02a9eaa64876c90952c42aed.png" alt="">
+    </div>
+    <div class="middle">
+        <div class="ticket">
+            <div class="left">
+                <i class="iconfont .icon-icon_ticket">&#xe615;</i>
+            </div>
+            <div class="right">
+                <h4>订座票</h4>
+                <p>选好场次及座位，到影院自助机取票</p>
+                <a href="javascript:void(0)">立即订座</a>
+            </div>
+        </div>
+        <div class="getticket">
+            <div class="left">
+                <i class="iconfont .icon-iconchair01">&#xe6b1;</i>
+            </div>
+            <div class="right">
+                <h4>通兑票</h4>
+                <p>有效期内到影院前台兑换影票</p>
+                <a href="javascript:void(0)">立即订票</a>
+            </div>
+        </div>
+        <div class="food">
+            <div class="left">
+                <i class="iconfont .icon-cola">&#xe69e;</i>
+            </div>
+            <div class="right">
+                <p>小卖品</p>
+                <a href="javascript:void(0)" routerLink="sundry">购买</a>
+            </div>
+        </div>
+        <div class="addr">
+            <div class="left">
+                <i class="iconfont .aui-icon-location">&#xe617;</i>
+            </div>
+            <div class="right">
+                <p>
+                    {{cinimaData.address|cutcinema:17}}
+                </p>
+            </div>
+        </div>
+        <div class="tel">
+            <div class="left">
+                <i class="iconfont .icon-iconphone">&#xe634;</i>
+            </div>
+            <div class="right">
+                <span>{{cinimaData.telephones}}</span>
+            </div>
+        </div>
+    </div>
+    <div class="bottom">
+        <ul>
+            <li routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+                <a href="javascript:void(0)" routerLink="ticket">
+                    <i class="iconfont .icon-ticket">&#xe6b1;</i>
+                    <span>取票</span>
+                </a>
+            </li>
+            <li routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+                <a href="javascript:void(0)" routerLink="glass">
+                    <i class="iconfont .icon-glasses">&#xe673;</i>
+                    <span>3D</span>
+                </a>
+            </li>
+            <li routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+                <a href="javascript:void(0)" routerLink="park">
+                    <i class="iconfont .parking">&#xe836;</i>
+                    <span>停车</span>
+                </a>
+            </li>
+            <li routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+                <a href="javascript:void(0)" routerLink="saless">
+                    <i class="iconfont .icon-gift">&#xe61f;</i>
+                    <span>优惠</span>
+                </a>
+            </li>
+            <li routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+                <a href="javascript:void(0)" routerLink="bus">
+                    <i class="icon iconfont">&#xf0098;</i>
+                    <span>交通</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="lastbottom">
+        <router-outlet></router-outlet>
+    </div>
+</div>

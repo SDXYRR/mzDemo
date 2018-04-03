@@ -1,0 +1,26 @@
+<div id="cinema">
+    <li *ngFor="let item of addr;let i = index">
+        <div class="nameList" (click)="getItem(i)">
+            {{item.name}}
+        </div>
+        <div *ngIf="item.states">
+            <div *ngFor="let c of (item.content);" class="box">
+                <a href="javascript:void(0)" routerLink="/cinemacommon/{{c.id}}">
+                    <div class="top">
+                        <h4>
+                            {{c.name|cutDown:10}}
+                        </h4>
+                        <div class="special">
+                            <span>座</span>
+                            <span>通</span>
+                        </div>
+                        <span class="fa fa-angle-right"></span>
+                    </div>
+                    <span>{{c.labels.name}}</span>
+                    <h6>{{c.address|cutDown:18}}</h6>
+                    <span>距离未知</span>
+                </a>
+            </div>
+        </div>
+    </li>
+</div>

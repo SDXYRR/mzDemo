@@ -1,0 +1,25 @@
+<div id="login">
+      <form #regForm="ngForm" name="myForm" id="myForm" class="myForm">
+          <div class="username">
+              <i></i>
+              <input type="text" name="user" placeholder="输入用户名" [(ngModel)]="myName" #stu1="ngModel" 
+                required="required" pattern="^\w{9}$"
+              >
+              <i></i>
+              <em *ngIf="stu1.valid">√</em>
+              <u *ngIf="stu1.invalid&&stu1.dirty">X</u>
+          </div>
+          <div class="psw">
+              <i></i>
+              <input type="password" name="psd" placeholder="输入验证码" [(ngModel)]="myPass" #stu="ngModel"
+              required="required" pattern="\w{6}"
+              >
+              <i></i>
+              <em *ngIf="stu.valid">√</em>
+              <u *ngIf="stu.invalid&&stu.dirty">X</u>
+          </div>
+          <div class="btn">
+              <input type="submit" value="登录" (click)="login()">
+          </div>
+      </form>
+</div>

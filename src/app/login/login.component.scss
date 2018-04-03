@@ -1,0 +1,98 @@
+#login{
+    position: fixed;
+    top: 50px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #f6f6f6;
+    .myForm{
+        width: 80%;
+        margin: 30px auto;
+        text-align: center;
+        div{
+            margin-bottom: 30px;
+            &:nth-child(1){
+                width: 100%;
+                padding: 10px 0;
+                border: 1px solid #ccc;
+                border-top: none;
+                position: relative;
+                em{
+                    color: greenyellow;
+                }
+                u{
+                    color: red;
+                    text-decoration: none;
+                }
+                i{
+                    position: absolute;
+                    width: 1px;
+                    top: 0;
+                    height:30px; 
+                    &:nth-child(1){
+                        left: -1px;
+                        background: #f6f6f6;
+                    }
+                    &:nth-child(3){
+                        right: -1px;
+                       background: #f6f6f6;
+                   }
+                  }
+                input{
+                    background: #f6f6f6;
+                    border: none;
+                    outline: none;
+                    width: 90%;
+                }
+            }
+            &:nth-child(2){
+                width: 100%;
+                padding: 10px 0;
+                border: 1px solid #ccc;
+                border-top: none;
+                position: relative;
+                em{
+                    color: greenyellow;
+                }
+                u{
+                    color: red;
+                    text-decoration: none;
+                }
+                i{
+                    position: absolute;
+                    width: 1px;
+                    top: 0;
+                    height:30px; 
+                    &:nth-child(1){
+                        left: -1px;
+                        background: #f6f6f6;
+                    }
+                    &:nth-child(3){
+                        right: -1px;
+                       background: #f6f6f6;
+                   }
+                  }
+                input{
+                    width: 90%;
+                    background: #f6f6f6;
+                    border: none;
+                    outline: none;
+                }
+            }
+            &:nth-child(3){
+                width: 100%;
+                border: 1px solid transparent;
+                margin-top: 50px;
+                input{
+                    width: 60%;
+                    background: #fe8233;
+                    color: #fff;
+                    border: none;
+                    outline: none;
+                    height: 35px;
+                    border-radius: 20px;
+                }
+            }
+        }
+    }
+}

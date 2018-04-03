@@ -1,0 +1,8 @@
+<app-commonfilms *ngFor="let h of HotData" [item]="h" type="now_playing"></app-commonfilms>
+<div class="lbottom" [@catchMore]="catchMore">
+        已经全部加载
+</div>
+<i class="iconfont .icon-banyuan" (click)="toTop()" [@buttonM]="buttonM">&#xe63a;</i>
+<em [@loadingI]="loadingI">
+    <img src="../../../assets/2.gif" alt="">
+</em>

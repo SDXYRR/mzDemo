@@ -1,0 +1,13 @@
+<div id="commig">
+  <div class="wiPlay">
+      即将上映
+  </div>
+  <div class="comiSon">
+      <app-filmpage *ngFor="let mf of nData" [cmLs]="mf"></app-filmpage>
+  </div>
+  <div class="button">
+    <a href="javascript:void(0)" routerLink="/films/comming">
+      更多即将上映电影
+      </a>
+  </div>
+</div>

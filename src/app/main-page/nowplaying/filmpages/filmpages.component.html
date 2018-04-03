@@ -1,0 +1,21 @@
+<div class="box">
+    <a href="javascript:void(0)" routerLink="/commonfilm/{{filesData.id}}">
+    <div class="top">
+        <img [src]="filesData.cover.origin" >
+    </div>
+    <div class="bottom">
+        <div class="left">
+            <span>
+                {{filesData.name}} 
+            </span>
+            <span>
+                {{filesData.cinemaCount}}家影院上映
+                {{filesData.watchCount}}人购票
+            </span>
+        </div>
+        <div class="right">
+            {{filesData.grade}}
+        </div>
+    </div>
+    </a>
+</div>

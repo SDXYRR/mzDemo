@@ -1,0 +1,15 @@
+<div class="box">
+  <a href="javascript:void(0)" routerLink="/commonfilm/{{cmLs.id}}">
+  <div class="top">
+      <img [src]="cmLs.cover.origin">
+  </div>
+  <div class="bottom">
+      <div class="left">
+          {{cmLs.name}}
+      </div>
+      <div class="right">
+          {{cmLs.premiereAt|date:'MM月dd日'}}上映
+      </div>
+  </div>
+  </a>
+</div>
